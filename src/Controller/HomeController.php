@@ -16,6 +16,19 @@ class HomeController extends AbstractController
      */
     public function index()
     {
-        return $this->render('home/index.html.twig');
+        return $this->render('security/login.html.twig');
+    }
+
+
+    /**
+     * register
+     *
+     * @Route("/register", name="register_index")
+     *
+     * @return Response
+     */
+    public function inscription()
+    {
+        return $this->render('security/register.html.twig');
     }
 }
